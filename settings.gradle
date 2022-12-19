@@ -1,4 +1,5 @@
 rootProject.name = 'obektron'
     // include 'obektron-app'
     // include 'obektron-library'
+include 'tech-services'
 

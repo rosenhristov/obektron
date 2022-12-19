@@ -16,10 +16,12 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('com.zaxxer:HikariCP:5.0.1')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-hateoas')
     compileOnly('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-devtools')
+    compile('org.flywaydb:flyway-core:5.0.7')
     runtimeOnly('org.postgresql:postgresql')
     annotationProcessor('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
