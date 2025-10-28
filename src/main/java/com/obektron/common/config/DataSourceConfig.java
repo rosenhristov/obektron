@@ -1,4 +1,4 @@
-package com.obektron.obektron.config;
+package com.obektron.common.config;
 
 import com.zaxxer.hikari.HikariDataSource;
 import lombok.extern.slf4j.Slf4j;

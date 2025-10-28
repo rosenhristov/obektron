@@ -1,4 +1,4 @@
-package com.obektron.obektron;
+package com.obektron;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
