@@ -19,7 +19,7 @@ import java.util.UUID;
 
 @Slf4j
 @RestController
-@RequestMapping("/v1/api/people")
+@RequestMapping("/people")
 public class PersonController implements ObectronApi<PersonDTO> {
 
     private final PersonService personService;

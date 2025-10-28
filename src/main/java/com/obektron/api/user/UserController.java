@@ -21,7 +21,8 @@ import java.util.stream.Collectors;
 import static java.util.Objects.nonNull;
 
 @Slf4j
-@RestController("/users")
+@RestController
+@RequestMapping("/users")
 public class UserController implements ObectronApi<UserDTO> {
 
     private final UserService userService;

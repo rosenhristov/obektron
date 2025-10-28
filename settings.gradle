@@ -1,5 +1,5 @@
-rootProject.name = 'obektron'
-// include 'obektron-app'
-// include 'obektron-library'
+rootProject.name = 'obectron'
+// include 'obectron-app'
+// include 'obectron-library'
 // include 'tech-services'
 
