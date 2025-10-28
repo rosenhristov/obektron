@@ -1,15 +1,15 @@
 app:
   dataSource:
     host: localhost
-    username: obektron
+    username: obectron
     password: 7840
-    databaseName: obektron
+    databaseName: obectron
     jdbc-url: jdbc:postgresql://${app.datasource.postgresql.host}:${app.datasource.postgresql.port}/${app.datasource.postgresql.databaseName}
 
 spring:
   resources:
     add-mappings: true
-  application.name: obektron
+  application.name: obectron
   thymeleaf.cache: false
   mvc:
     servlet:
@@ -18,11 +18,11 @@ spring:
 server:
   port: 8080
   servlet:
-    contextPath: /obektron
+    contextPath: /obectron
 
 # Postgres connection settings
-spring.datasource.url: jdbc:postgresql://localhost:5432/obektron
-spring.datasource.username: obektron
+spring.datasource.url: jdbc:postgresql://localhost:5432/obectron
+spring.datasource.username: obectron
 spring.datasource.password: 7840
 spring.datasource.driver-class-name: org.postgresql.Driver
 
@@ -32,7 +32,7 @@ spring.datasource.hikari.maximumPoolSize: 10
 spring.datasource.hikari.idleTimeout: 30000
 spring.datasource.hikari.maxLifetime: 2000000
 spring.datasource.hikari.connectionTimeout: 30000
-spring.datasource.hikari.poolName: ObektronHikariPool
+spring.datasource.hikari.poolName: ObectronHikariPool
 
 # Tomcat settings
 spring.datasource.tomcat.maxActive: 15
