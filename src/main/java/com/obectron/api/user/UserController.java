@@ -3,7 +3,6 @@ package com.obectron.api.user;
 import com.obectron.api.ObectronApi;
 import com.obectron.core.user.UserService;
 import com.obectron.persistence.user.UserEntity;
-import com.obectron.persistence.user.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -28,7 +27,7 @@ public class UserController implements ObectronApi<UserDTO> {
     private final UserService userService;
     private final UserMapper userMapper;
 
-    public UserController(UserService userService, UserMapper userMapper, UserRepository userRepository) {
+    public UserController(UserService userService, UserMapper userMapper) {
         this.userMapper = userMapper;
         this.userService = userService;
     }
