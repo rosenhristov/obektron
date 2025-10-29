@@ -47,4 +47,4 @@ USER obectron-user
 ENTRYPOINT ["java", "-jar", "obectron.jar"]
 
 # Build image command from project root:
-# podman build -f Podmanfile -t obectron:latest --build-arg VERSION=0.0.1-SNAPSHOT .
+# podman build [-f Containerfile] -t obectron:latest --build-arg VERSION=0.0.1-SNAPSHOT .
