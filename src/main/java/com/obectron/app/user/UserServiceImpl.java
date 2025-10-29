@@ -1,8 +1,8 @@
-package com.obectron.application.user;
+package com.obectron.app.user;
 
 import com.obectron.core.user.UserDAO;
 import com.obectron.core.user.UserService;
-import com.obectron.persistence.user.UserEntity;
+import com.obectron.db.user.UserEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

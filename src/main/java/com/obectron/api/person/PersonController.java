@@ -2,7 +2,7 @@ package com.obectron.api.person;
 
 import com.obectron.api.ObectronApi;
 import com.obectron.core.person.PersonService;
-import com.obectron.persistence.person.PersonEntity;
+import com.obectron.db.person.PersonEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

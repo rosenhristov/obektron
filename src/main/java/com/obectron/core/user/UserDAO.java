@@ -1,7 +1,7 @@
 package com.obectron.core.user;
 
 import com.obectron.core.DAO;
-import com.obectron.persistence.user.UserEntity;
+import com.obectron.db.user.UserEntity;
 
 import java.util.UUID;
 

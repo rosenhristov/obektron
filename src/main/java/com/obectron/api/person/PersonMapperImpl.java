@@ -1,12 +1,15 @@
 package com.obectron.api.person;
 
 import com.obectron.core.person.Person;
-import com.obectron.persistence.person.PersonEntity;
+import com.obectron.db.person.PersonEntity;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
+
+import static com.obectron.common.utils.DateUtils.toDate;
+import static com.obectron.common.utils.DateUtils.toSqlDate;
 
 @Component
 public class PersonMapperImpl implements PersonMapper {
@@ -59,7 +62,7 @@ public class PersonMapperImpl implements PersonMapper {
                             .nicknames(personDTO.getNicknames())
                             .addresses(personDTO.getAddresses())
                             .gender(personDTO.getGender())
-                            .birthDate(personDTO.getBirthDate())
+                            .birthDate(toSqlDate(personDTO.getBirthDate()))
                             .phone(personDTO.getPhone())
                             .email(personDTO.getEmail())
                             .build());
@@ -77,7 +80,7 @@ public class PersonMapperImpl implements PersonMapper {
                             .nicknames(personEntity.getNicknames())
                             .addresses(personEntity.getAddresses())
                             .gender(personEntity.getGender())
-                            .birthDate(personEntity.getBirthDate())
+                            .birthDate(toDate(personEntity.getBirthDate()))
                             .phone(personEntity.getPhone())
                             .email(personEntity.getEmail())
                             .build());

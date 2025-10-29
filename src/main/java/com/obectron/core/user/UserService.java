@@ -1,7 +1,7 @@
 package com.obectron.core.user;
 
 import com.obectron.core.BaseService;
-import com.obectron.persistence.user.UserEntity;
+import com.obectron.db.user.UserEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

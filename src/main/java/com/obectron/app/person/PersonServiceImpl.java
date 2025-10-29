@@ -1,8 +1,8 @@
-package com.obectron.application.person;
+package com.obectron.app.person;
 
 import com.obectron.core.person.PersonDAO;
 import com.obectron.core.person.PersonService;
-import com.obectron.persistence.person.PersonEntity;
+import com.obectron.db.person.PersonEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

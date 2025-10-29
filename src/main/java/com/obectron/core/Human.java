@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+import java.util.Date;
 import java.util.List;
 
 import static java.util.Objects.isNull;
@@ -20,7 +21,7 @@ public abstract class Human {
     protected String surname;
     protected List<Address> addresses;
     protected Gender gender;
-    protected String birthDate;
+    protected Date birthDate;
     protected String phone;
     protected String email;
 

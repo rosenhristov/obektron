@@ -1,7 +1,7 @@
 package com.obectron.core.address;
 
 import com.obectron.core.DAO;
-import com.obectron.persistence.address.AddressEntity;
+import com.obectron.db.address.AddressEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.UUID;

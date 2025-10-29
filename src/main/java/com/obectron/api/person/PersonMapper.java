@@ -2,7 +2,7 @@ package com.obectron.api.person;
 
 import com.obectron.api.BaseMapper;
 import com.obectron.core.person.Person;
-import com.obectron.persistence.person.PersonEntity;
+import com.obectron.db.person.PersonEntity;
 import jakarta.validation.constraints.NotNull;
 
 import java.util.List;

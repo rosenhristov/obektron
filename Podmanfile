@@ -1,4 +1,7 @@
-# Standard build
+# ================
+# Standard Build #
+# ================
+
 #FROM eclipse-temurin:21-jdk
 #ARG VERSION=0.0.1-SNAPSHOT
 #LABEL maintainer="rosenhrist@gmail.com" version="${VERSION}"
@@ -10,6 +13,10 @@
 #EXPOSE 8080
 #USER obectron-user
 #ENTRYPOINT ["java", "-jar", "obectron.jar"]
+
+# ===================
+# Multi-stage Build #
+# ===================
 
 # ============ 1️⃣ Build Stage ============
 FROM gradle:8.10-jdk21 AS build
@@ -40,4 +47,4 @@ USER obectron-user
 ENTRYPOINT ["java", "-jar", "obectron.jar"]
 
 # Build image command from project root:
-# podman build -f src\main\java\com\obectron\podman\Podmanfile -t obectron:latest --build-arg VERSION=0.0.1-SNAPSHOT .
+# podman build -f Podmanfile -t obectron:latest --build-arg VERSION=0.0.1-SNAPSHOT .

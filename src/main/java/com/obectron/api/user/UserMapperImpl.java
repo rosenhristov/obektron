@@ -1,7 +1,7 @@
 package com.obectron.api.user;
 
 import com.obectron.core.user.User;
-import com.obectron.persistence.user.UserEntity;
+import com.obectron.db.user.UserEntity;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.stereotype.Component;
 

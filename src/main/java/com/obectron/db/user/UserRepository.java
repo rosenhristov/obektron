@@ -1,4 +1,4 @@
-package com.obectron.persistence.user;
+package com.obectron.db.user;
 
 import com.obectron.core.user.UserDAO;
 import org.springframework.stereotype.Repository;

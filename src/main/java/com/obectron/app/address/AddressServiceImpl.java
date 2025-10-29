@@ -1,8 +1,8 @@
-package com.obectron.application.address;
+package com.obectron.app.address;
 
 import com.obectron.core.address.AddressDAO;
 import com.obectron.core.address.AddressService;
-import com.obectron.persistence.address.AddressEntity;
+import com.obectron.db.address.AddressEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

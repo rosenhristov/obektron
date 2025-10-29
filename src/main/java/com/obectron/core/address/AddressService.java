@@ -1,7 +1,7 @@
 package com.obectron.core.address;
 
 import com.obectron.core.BaseService;
-import com.obectron.persistence.address.AddressEntity;
+import com.obectron.db.address.AddressEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

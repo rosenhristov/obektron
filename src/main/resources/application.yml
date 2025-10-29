@@ -7,13 +7,14 @@ app:
     jdbc-url: jdbc:postgresql://${app.datasource.postgresql.host}:${app.datasource.postgresql.port}/${app.datasource.postgresql.databaseName}
 
 spring:
-  resources:
-    add-mappings: true
   application.name: obectron
   thymeleaf.cache: false
   mvc:
     servlet:
       path: /v1/api
+  web:
+    resources:
+      add-mappings: true
 
 server:
   port: 8080
@@ -48,4 +49,3 @@ spring.jpa.hibernate.ddl-auto: update
 logging.level.org.hibernate.SQL: DEBUG
 logging.level.com.zaxxer.hikari.HikariConfig: DEBUG
 logging.level.org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-

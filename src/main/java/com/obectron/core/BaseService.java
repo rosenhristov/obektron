@@ -1,6 +1,6 @@
 package com.obectron.core;
 
-import com.obectron.persistence.BaseEntity;
+import com.obectron.db.BaseEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
