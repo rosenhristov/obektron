@@ -1,7 +1,3 @@
 rootProject.name = 'obectron'
-// include 'app'
-// include 'api'
-// include 'core'
-// include 'common'
-// include 'db'
+include 'core', 'common', 'db', 'api', 'app'
 
